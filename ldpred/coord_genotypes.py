@@ -118,7 +118,7 @@ def get_mean_sample_size(n, cord_data_g):
 
 
 def filter_coord_data(cd, filter_mask):
-    data_keys = ['raw_snps', 'snp_stds', 'snp_means', 'freqs' ,'ps', 'ns', 'positions', 'nts', 'sids','betas','log_odds']
+    data_keys = ['raw_snps_ref', 'snp_stds_ref', 'snp_means_ref', 'freqs_ref' ,'ps', 'ns', 'positions', 'nts', 'sids','betas','log_odds']
     if 'raw_snps_val' in cd.keys():
         data_keys.extend(['raw_snps_val', 'snp_stds_val', 'snp_means_val', 'freqs_val'])
     for k in data_keys:
